@@ -1,0 +1,12 @@
+{
+  "name": "employee-dashboard-backend",
+  "version": "1.0.0",
+  "description": "Mock backend for Employee Management Dashboard",
+  "scripts": {
+    "serve": "json-server --watch db.json --port 5000 --middlewares middleware.js",
+    "start": "json-server --watch db.json --port 5000 --middlewares middleware.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

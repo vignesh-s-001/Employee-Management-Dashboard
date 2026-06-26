@@ -1,0 +1,196 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@nexatech.io",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "HR Manager",
+      "email": "hr@nexatech.io",
+      "password": "hr123",
+      "role": "hr"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@nexatech.io",
+      "department": "Engineering",
+      "designation": "Senior Software Engineer",
+      "status": "Active",
+      "joiningDate": "2026-01-08",
+      "phone": "+1-555-0101",
+      "avatar": "AJ"
+    },
+    {
+      "id": 2,
+      "name": "Bob Martinez",
+      "email": "bob.martinez@nexatech.io",
+      "department": "Design",
+      "designation": "UI/UX Designer",
+      "status": "Active",
+      "joiningDate": "2026-01-20",
+      "phone": "+1-555-0102",
+      "avatar": "BM"
+    },
+    {
+      "id": 3,
+      "name": "Carol White",
+      "email": "carol.white@nexatech.io",
+      "department": "Marketing",
+      "designation": "Marketing Manager",
+      "status": "Active",
+      "joiningDate": "2026-02-05",
+      "phone": "+1-555-0103",
+      "avatar": "CW"
+    },
+    {
+      "id": 4,
+      "name": "David Lee",
+      "email": "david.lee@nexatech.io",
+      "department": "Engineering",
+      "designation": "DevOps Engineer",
+      "status": "Inactive",
+      "joiningDate": "2026-02-18",
+      "phone": "+1-555-0104",
+      "avatar": "DL"
+    },
+    {
+      "id": 5,
+      "name": "Emma Davis",
+      "email": "emma.davis@nexatech.io",
+      "department": "HR",
+      "designation": "HR Specialist",
+      "status": "Active",
+      "joiningDate": "2026-03-03",
+      "phone": "+1-555-0105",
+      "avatar": "ED"
+    },
+    {
+      "id": 6,
+      "name": "Frank Wilson",
+      "email": "frank.wilson@nexatech.io",
+      "department": "Finance",
+      "designation": "Financial Analyst",
+      "status": "Active",
+      "joiningDate": "2026-03-22",
+      "phone": "+1-555-0106",
+      "avatar": "FW"
+    },
+    {
+      "id": 7,
+      "name": "Grace Chen",
+      "email": "grace.chen@nexatech.io",
+      "department": "Engineering",
+      "designation": "Frontend Developer",
+      "status": "Active",
+      "joiningDate": "2026-04-10",
+      "phone": "+1-555-0107",
+      "avatar": "GC"
+    },
+    {
+      "id": 8,
+      "name": "Henry Brown",
+      "email": "henry.brown@nexatech.io",
+      "department": "Sales",
+      "designation": "Sales Executive",
+      "status": "On Leave",
+      "joiningDate": "2026-04-25",
+      "phone": "+1-555-0108",
+      "avatar": "HB"
+    },
+    {
+      "id": 9,
+      "name": "Isla Taylor",
+      "email": "isla.taylor@nexatech.io",
+      "department": "Marketing",
+      "designation": "Content Strategist",
+      "status": "Active",
+      "joiningDate": "2026-05-07",
+      "phone": "+1-555-0109",
+      "avatar": "IT"
+    },
+    {
+      "id": 10,
+      "name": "James Anderson",
+      "email": "james.anderson@nexatech.io",
+      "department": "Engineering",
+      "designation": "Backend Developer",
+      "status": "Active",
+      "joiningDate": "2026-05-19",
+      "phone": "+1-555-0110",
+      "avatar": "JA"
+    },
+    {
+      "id": 11,
+      "name": "Karen Thomas",
+      "email": "karen.thomas@nexatech.io",
+      "department": "Design",
+      "designation": "Graphic Designer",
+      "status": "Inactive",
+      "joiningDate": "2026-05-30",
+      "phone": "+1-555-0111",
+      "avatar": "KT"
+    },
+    {
+      "id": 12,
+      "name": "Liam Jackson",
+      "email": "liam.jackson@nexatech.io",
+      "department": "Sales",
+      "designation": "Sales Manager",
+      "status": "Active",
+      "joiningDate": "2026-06-04",
+      "phone": "+1-555-0112",
+      "avatar": "LJ"
+    },
+    {
+      "id": 13,
+      "name": "Mia Harris",
+      "email": "mia.harris@nexatech.io",
+      "department": "HR",
+      "designation": "HR Manager",
+      "status": "Active",
+      "joiningDate": "2026-06-12",
+      "phone": "+1-555-0113",
+      "avatar": "MH"
+    },
+    {
+      "id": 14,
+      "name": "Noah Clark",
+      "email": "noah.clark@nexatech.io",
+      "department": "Finance",
+      "designation": "Accountant",
+      "status": "On Leave",
+      "joiningDate": "2026-06-20",
+      "phone": "+1-555-0114",
+      "avatar": "NC"
+    },
+    {
+      "id": 15,
+      "name": "Olivia Lewis",
+      "email": "olivia.lewis@nexatech.io",
+      "department": "Engineering",
+      "designation": "QA Engineer",
+      "status": "Active",
+      "joiningDate": "2026-06-25",
+      "phone": "+1-555-0115",
+      "avatar": "OL"
+    },
+    {
+      "name": "Alice Johnsonss",
+      "email": "admin@nexatech.ioff",
+      "department": "Engineering",
+      "designation": "4ertgtdrfgfd",
+      "status": "Active",
+      "joiningDate": "0445-04-04",
+      "phone": "535345345345",
+      "avatar": "AJ",
+      "id": 16
+    }
+  ]
+}
