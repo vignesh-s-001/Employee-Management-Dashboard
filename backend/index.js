@@ -5,8 +5,20 @@ const cors = require('cors');
 
 const server = jsonServer.create();
 
-// Resolve path to db.json
-const router = jsonServer.router(path.join(__dirname, 'db.json'));
+const fs = require('fs');
+
+// Vercel serverless functions have a read-only filesystem except for /tmp.
+// We copy the db.json to /tmp/db.json so json-server can write to it without crashing.
+const dbFile = path.join(__dirname, 'db.json');
+const tmpDbFile = path.join('/tmp', 'db.json');
+
+// Copy only if it doesn't exist, to avoid overwriting state during a warm lambda restart
+if (!fs.existsSync(tmpDbFile)) {
+  fs.copyFileSync(dbFile, tmpDbFile);
+}
+
+// Resolve path to the writable db.json
+const router = jsonServer.router(tmpDbFile);
 const middlewares = jsonServer.defaults();
 
 // Set up CORS

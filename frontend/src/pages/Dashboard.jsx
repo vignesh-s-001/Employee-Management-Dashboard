@@ -60,7 +60,7 @@ export default function Dashboard() {
         </div>
 
         {/* Two Column Section */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginTop: 24 }}>
+        <div className="dashboard-columns">
           {/* Department Breakdown */}
           <div className="card">
             <h3 style={{ marginBottom: 20 }}>🏢 Department Breakdown</h3>

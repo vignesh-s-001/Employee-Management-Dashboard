@@ -17,7 +17,8 @@ export default function Sidebar() {
   }
 
   return (
-    <aside className="sidebar">
+    <>
+      <aside className="sidebar">
       {/* Logo */}
       <div className="sidebar-logo">
         <div className="sidebar-logo-icon">👨‍💼</div>
@@ -64,6 +65,21 @@ export default function Sidebar() {
           🚪 Logout
         </button>
       </div>
-    </aside>
+      </aside>
+
+      {/* Mobile Bottom Navigation */}
+      <nav className="bottom-nav">
+        {NAV_ITEMS.map(({ path, label, icon }) => (
+          <NavLink
+            key={path}
+            to={path}
+            className={({ isActive }) => `bottom-nav-item ${isActive ? 'active' : ''}`}
+          >
+            <span className="bottom-nav-icon">{icon}</span>
+            <span className="bottom-nav-label">{label}</span>
+          </NavLink>
+        ))}
+      </nav>
+    </>
   );
 }
