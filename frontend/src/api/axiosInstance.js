@@ -1,7 +1,10 @@
 import axios from 'axios';
 import { getToken, clearAuth } from '../utils/auth';
 
-const BASE_URL = '/api';
+// Use the live backend URL in production, and local proxy in development
+const BASE_URL = import.meta.env.PROD 
+  ? 'https://employee-management-dashboard-9zwh.vercel.app'
+  : '/api';
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,

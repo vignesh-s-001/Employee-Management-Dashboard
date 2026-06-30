@@ -191,6 +191,17 @@
       "phone": "535345345345",
       "avatar": "AJ",
       "id": 16
+    },
+    {
+      "name": "VIGNESH SANKAR",
+      "email": "vigneshsankar532@gmail.com",
+      "department": "Design",
+      "designation": "dfgdgf",
+      "status": "Active",
+      "joiningDate": "2026-07-09",
+      "phone": "6369307326",
+      "avatar": "VS",
+      "id": 17
     }
   ]
 }
