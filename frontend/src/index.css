@@ -223,6 +223,7 @@ select.input {
 
 .data-table {
   width: 100%;
+  min-width: 800px;
   border-collapse: collapse;
 }
 
@@ -719,6 +720,7 @@ select.input {
   .chart-grid { grid-template-columns: 1fr; }
   .stat-grid { grid-template-columns: repeat(2, 1fr); }
   .navbar { padding: 0 16px; }
+  .hide-on-mobile { display: none !important; }
 }
 
 @media (max-width: 480px) {

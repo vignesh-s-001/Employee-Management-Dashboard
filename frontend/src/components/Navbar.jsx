@@ -25,7 +25,7 @@ export default function Navbar({ title, subtitle }) {
       {/* Right: User + logout */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
         {/* Date */}
-        <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+        <div className="hide-on-mobile" style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
           {new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}
         </div>
 
@@ -40,7 +40,7 @@ export default function Navbar({ title, subtitle }) {
           <div className="avatar" style={{ width: 28, height: 28, fontSize: '0.65rem' }}>
             {user?.name?.slice(0, 2) || 'U'}
           </div>
-          <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>{user?.name}</span>
+          <span className="hide-on-mobile" style={{ fontSize: '0.85rem', fontWeight: 600 }}>{user?.name}</span>
         </div>
 
         <button id="navbar-logout-btn" className="btn btn-ghost btn-sm" onClick={handleLogout} title="Logout">
