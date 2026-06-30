@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Mock backend for Employee Management Dashboard",
   "scripts": {
-    "serve": "json-server --watch db.json --port 5000 --middlewares middleware.js",
-    "start": "json-server --watch db.json --port 5000 --middlewares middleware.js"
+    "serve": "node index.js",
+    "start": "node index.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "json-server": "^0.17.4"
   }
 }
