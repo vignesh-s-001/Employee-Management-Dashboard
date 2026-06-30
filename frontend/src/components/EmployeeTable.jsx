@@ -33,7 +33,7 @@ export default function EmployeeTable({ employees, onEdit, onDelete }) {
           {employees.map((emp) => (
             <tr key={emp.id}>
               {/* Employee Name + Avatar */}
-              <td>
+              <td data-label="Employee">
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                   <div className="avatar">{emp.avatar || emp.name?.slice(0,2).toUpperCase()}</div>
                   <div>
@@ -43,7 +43,7 @@ export default function EmployeeTable({ employees, onEdit, onDelete }) {
                 </div>
               </td>
 
-              <td>
+              <td data-label="Department">
                 <span style={{
                   background: 'var(--color-surface-2)',
                   border: '1px solid var(--color-border)',
@@ -57,11 +57,11 @@ export default function EmployeeTable({ employees, onEdit, onDelete }) {
                 </span>
               </td>
 
-              <td style={{ color: 'var(--color-text-muted)' }}>{emp.designation}</td>
+              <td data-label="Designation" style={{ color: 'var(--color-text-muted)' }}>{emp.designation}</td>
 
-              <td><StatusBadge status={emp.status} /></td>
+              <td data-label="Status"><StatusBadge status={emp.status} /></td>
 
-              <td style={{ color: 'var(--color-text-muted)' }}>
+              <td data-label="Joined" style={{ color: 'var(--color-text-muted)' }}>
                 {new Date(emp.joiningDate).toLocaleDateString('en-US', {
                   year: 'numeric', month: 'short', day: 'numeric',
                 })}
