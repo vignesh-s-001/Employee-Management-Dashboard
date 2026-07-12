@@ -55,7 +55,7 @@ export default function Login() {
         </div>
 
         {/* Demo credentials hint */}
-        <div style={{
+        {/* <div style={{
           background: 'rgba(108,99,255,0.1)',
           border: '1px solid rgba(108,99,255,0.2)',
           borderRadius: 'var(--radius-md)',
@@ -63,7 +63,7 @@ export default function Login() {
           marginBottom: 24,
           fontSize: '0.82rem',
         }}>
-          {/* <div style={{ fontWeight: 700, color: 'var(--color-accent)', marginBottom: 6 }}>Demo Credentials</div>
+          <div style={{ fontWeight: 700, color: 'var(--color-accent)', marginBottom: 6 }}>Demo Credentials</div>
           <div style={{ color: 'var(--color-text-muted)', lineHeight: 1.8 }}>
             📧 <strong>xxxxx</strong> / 🔑 <strong>admin123</strong><br />
             📧 <strong>xxx.io</strong> / 🔑 <strong>hr123</strong>
