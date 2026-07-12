@@ -50,7 +50,7 @@ export default function Login() {
       <div className="login-card">
         {/* Logo */}
         <div className="login-logo">
-          <img src={logoImg} alt="E-Dash Logo" style={{ width: 48, height: 48, objectFit: 'contain', marginBottom: 12 }} />
+          <img src={logoImg} alt="E-Dash Logo" style={{ width: 48, height: 48, objectFit: 'cover', borderRadius: '50%', marginBottom: 12 }} />
           <h1 style={{ fontSize: '1.5rem', color: 'var(--color-text)' }}>E-Dash</h1>
           <p style={{ marginTop: 4, fontSize: '0.9rem' }}>Sign in to your account</p>
         </div>
