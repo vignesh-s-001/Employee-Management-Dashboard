@@ -113,9 +113,9 @@ export default function Analytics() {
           <div className="chart-card">
             <div className="chart-card-title">🏢 Employees by Department</div>
             <ResponsiveContainer width="100%" height={260}>
-              <BarChart data={stats.deptData} margin={{ top: 5, right: 20, left: -10, bottom: 5 }}>
+              <BarChart data={stats.deptData} margin={{ top: 5, right: 20, left: -10, bottom: 25 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
-                <XAxis dataKey="name" tick={{ fill: 'var(--color-text-muted)', fontSize: 11 }} axisLine={false} tickLine={false} />
+                <XAxis dataKey="name" tick={{ fill: 'var(--color-text-muted)', fontSize: 10, angle: -35, textAnchor: 'end', dy: 10 }} axisLine={false} tickLine={false} />
                 <YAxis tick={{ fill: 'var(--color-text-muted)', fontSize: 11 }} axisLine={false} tickLine={false} allowDecimals={false} />
                 <Tooltip content={<CustomTooltip />} />
                 <Bar dataKey="value" name="Employees" radius={[6, 6, 0, 0]}>
@@ -135,16 +135,16 @@ export default function Analytics() {
                 <Pie
                   data={stats.statusData}
                   cx="50%" cy="50%"
-                  innerRadius={70} outerRadius={100}
+                  innerRadius={50} outerRadius={75}
                   paddingAngle={4}
                   dataKey="value"
                   label={({ cx, cy, midAngle, outerRadius, name, percent }) => {
                     const RADIAN = Math.PI / 180;
-                    const radius = outerRadius + 15;
+                    const radius = outerRadius + 20;
                     const x = cx + radius * Math.cos(-midAngle * RADIAN);
                     const y = cy + radius * Math.sin(-midAngle * RADIAN);
                     return (
-                      <text x={x} y={y} fill="var(--color-text)" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central" fontSize={11}>
+                      <text x={x} y={y} fill="var(--color-text)" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central" fontSize={10}>
                         {`${name} ${(percent * 100).toFixed(0)}%`}
                       </text>
                     );
@@ -172,8 +172,8 @@ export default function Analytics() {
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
-                <XAxis dataKey="month" tick={{ fill: 'var(--color-text-muted)', fontSize: 11 }} axisLine={false} tickLine={false} />
-                <YAxis tick={{ fill: 'var(--color-text-muted)', fontSize: 11 }} axisLine={false} tickLine={false} allowDecimals={false} />
+                <XAxis dataKey="month" tick={{ fill: 'var(--color-text-muted)', fontSize: 10 }} axisLine={false} tickLine={false} />
+                <YAxis tick={{ fill: 'var(--color-text-muted)', fontSize: 10 }} axisLine={false} tickLine={false} allowDecimals={false} />
                 <Tooltip content={<CustomTooltip />} />
                 <Area
                   type="monotone"
