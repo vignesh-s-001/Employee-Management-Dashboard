@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import logoImg from '../assets/logo.png';
 
 export default function Login() {
   const [form, setForm]   = useState({ email: '', password: '' });
@@ -49,8 +50,8 @@ export default function Login() {
       <div className="login-card">
         {/* Logo */}
         <div className="login-logo">
-          <div className="login-logo-icon">👨‍💼</div>
-          <h1 style={{ fontSize: '1.5rem', color: 'var(--color-text)' }}>EmpDash</h1>
+          <img src={logoImg} alt="E-Dash Logo" style={{ width: 48, height: 48, objectFit: 'contain', marginBottom: 12 }} />
+          <h1 style={{ fontSize: '1.5rem', color: 'var(--color-text)' }}>E-Dash</h1>
           <p style={{ marginTop: 4, fontSize: '0.9rem' }}>Sign in to your account</p>
         </div>
 

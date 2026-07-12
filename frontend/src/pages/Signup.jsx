@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import logoImg from '../assets/logo.png';
 
 const ROLES = ['employee', 'hr', 'admin'];
 
@@ -48,9 +49,9 @@ export default function Signup() {
       <div className="login-card" style={{ maxWidth: 480 }}>
         {/* Logo */}
         <div className="login-logo">
-          <div className="login-logo-icon">✨</div>
+          <img src={logoImg} alt="E-Dash Logo" style={{ width: 48, height: 48, objectFit: 'contain', marginBottom: 12 }} />
           <h1 style={{ fontSize: '1.5rem', color: 'var(--color-text)' }}>Create Account</h1>
-          <p style={{ marginTop: 4, fontSize: '0.9rem' }}>Join EmpDash – NexaTech's HR Portal</p>
+          <p style={{ marginTop: 4, fontSize: '0.9rem' }}>Join E-Dash – NexaTech's HR Portal</p>
         </div>
 
         {/* Global Error */}

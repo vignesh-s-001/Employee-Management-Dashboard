@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import logoImg from '../assets/logo.png';
 
 const NAV_ITEMS = [
   { path: '/dashboard',  label: 'Dashboard',  icon: '📊' },
@@ -21,9 +22,9 @@ export default function Sidebar() {
       <aside className="sidebar">
       {/* Logo */}
       <div className="sidebar-logo">
-        <div className="sidebar-logo-icon">👨‍💼</div>
+        <img src={logoImg} alt="E-Dash Logo" style={{ width: 36, height: 36, objectFit: 'contain' }} />
         <div>
-          <div style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--color-text)' }}>EmpDash</div>
+          <div style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--color-text)' }}>E-Dash</div>
           <div style={{ fontSize: '0.7rem', color: 'var(--color-text-muted)' }}>Management Portal</div>
         </div>
       </div>
