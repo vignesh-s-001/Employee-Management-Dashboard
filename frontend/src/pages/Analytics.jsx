@@ -53,9 +53,9 @@ export default function Analytics() {
 
     // Status distribution for pie
     const statusData = [
-      { name: 'Active',   value: active   },
-      { name: 'Inactive', value: inactive },
-      { name: 'On Leave', value: onLeave  },
+      { name: 'Active',   value: active,   color: '#22c55e' },
+      { name: 'Inactive', value: inactive, color: '#ef4444' },
+      { name: 'On Leave', value: onLeave,  color: '#f59e0b' },
     ].filter((d) => d.value > 0);
 
     // Monthly joining trend – current year (2026)
@@ -138,11 +138,21 @@ export default function Analytics() {
                   innerRadius={70} outerRadius={100}
                   paddingAngle={4}
                   dataKey="value"
-                  label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                  labelLine={{ stroke: 'var(--color-border)' }}
+                  label={({ cx, cy, midAngle, outerRadius, name, percent }) => {
+                    const RADIAN = Math.PI / 180;
+                    const radius = outerRadius + 15;
+                    const x = cx + radius * Math.cos(-midAngle * RADIAN);
+                    const y = cy + radius * Math.sin(-midAngle * RADIAN);
+                    return (
+                      <text x={x} y={y} fill="var(--color-text)" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central" fontSize={11}>
+                        {`${name} ${(percent * 100).toFixed(0)}%`}
+                      </text>
+                    );
+                  }}
+                  labelLine={{ stroke: 'var(--color-text-muted)' }}
                 >
-                  {stats.statusData.map((_, i) => (
-                    <Cell key={i} fill={['#22c55e', '#ef4444', '#f59e0b'][i]} />
+                  {stats.statusData.map((entry, i) => (
+                    <Cell key={i} fill={entry.color} />
                   ))}
                 </Pie>
                 <Tooltip content={<CustomTooltip />} />
