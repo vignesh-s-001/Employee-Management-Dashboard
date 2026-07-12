@@ -63,12 +63,12 @@ export default function Login() {
           marginBottom: 24,
           fontSize: '0.82rem',
         }}>
-          <div style={{ fontWeight: 700, color: 'var(--color-accent)', marginBottom: 6 }}>Demo Credentials</div>
+          {/* <div style={{ fontWeight: 700, color: 'var(--color-accent)', marginBottom: 6 }}>Demo Credentials</div>
           <div style={{ color: 'var(--color-text-muted)', lineHeight: 1.8 }}>
-            📧 <strong>admin@nexatech.io</strong> / 🔑 <strong>admin123</strong><br />
-            📧 <strong>hr@nexatech.io</strong> / 🔑 <strong>hr123</strong>
+            📧 <strong>xxxxx</strong> / 🔑 <strong>admin123</strong><br />
+            📧 <strong>xxx.io</strong> / 🔑 <strong>hr123</strong>
           </div>
-        </div>
+        </div> */}
 
         {/* Global Error */}
         {error && (
